@@ -72,7 +72,7 @@ function App() {
   <ol>
     {/* 배열 데이터를 자식 컴포넌트로 props를 통해 전달한다. 프롭스는 
     HTML의 속성을 명시하듯 기술하면 된다. */}
-    <FrontComp propData1={frontData}aTemp={100}></FrontComp>
+    <FrontComp propData1={frontData} aTemp={100}></FrontComp>
     <BackComp propData2={backData} bTemp={100} />
   </ol>
 </div>
