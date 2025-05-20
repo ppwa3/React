@@ -1,0 +1,290 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "Emmy",
+        "last": "Hallberg"
+      },
+      "location": {
+        "street": {
+          "number": 3463,
+          "name": "Prinsdalskleiva"
+        },
+        "city": "Liknes",
+        "state": "Vestfold",
+        "country": "Norway",
+        "postcode": "0382",
+        "coordinates": {
+          "latitude": "46.8006",
+          "longitude": "101.9963"
+        },
+        "timezone": {
+          "offset": "-1:00",
+          "description": "Azores, Cape Verde Islands"
+        }
+      },
+      "email": "emmy.hallberg@example.com",
+      "login": {
+        "uuid": "44c65a7f-d865-4e8b-8fa6-ff186f7990f3",
+        "username": "greenwolf976",
+        "password": "pass123",
+        "salt": "Hyu3GRd0",
+        "md5": "08e3a22f0a2c9a9df63d56ac1b6fb4e5",
+        "sha1": "7a651d33a32e32a380455f8328d82d34aa68c5d8",
+        "sha256": "2f71ce559d2f988069e1b3210eec961dc981892b655ef851cf41409b01d69fbe"
+      },
+      "dob": {
+        "date": "1948-11-01T09:00:46.378Z",
+        "age": 76
+      },
+      "registered": {
+        "date": "2013-04-19T13:56:38.013Z",
+        "age": 12
+      },
+      "phone": "84650924",
+      "cell": "93872697",
+      "id": {
+        "name": "FN",
+        "value": "01114840412"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/42.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/42.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/42.jpg"
+      },
+      "nat": "NO"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Tymon",
+        "last": "Hella"
+      },
+      "location": {
+        "street": {
+          "number": 9517,
+          "name": "Svenskerudveien"
+        },
+        "city": "Brønnsletten",
+        "state": "Aust-Agder",
+        "country": "Norway",
+        "postcode": "7703",
+        "coordinates": {
+          "latitude": "-5.9807",
+          "longitude": "2.0477"
+        },
+        "timezone": {
+          "offset": "+8:00",
+          "description": "Beijing, Perth, Singapore, Hong Kong"
+        }
+      },
+      "email": "tymon.hella@example.com",
+      "login": {
+        "uuid": "5dc3afc3-0b4e-45df-911e-84297d1a1233",
+        "username": "blueduck318",
+        "password": "anarchy",
+        "salt": "HsiMC3gP",
+        "md5": "3ba931e5fb007e7768b1d6732fe250a7",
+        "sha1": "0bb11a66ecdfc595083233f6f730c177ae1311a6",
+        "sha256": "d4dcc43e2d93f3a31e97fd3d04cc807be5a252d3d33dc8a508391e6a2625cd5d"
+      },
+      "dob": {
+        "date": "1955-09-11T20:46:56.413Z",
+        "age": 69
+      },
+      "registered": {
+        "date": "2006-01-20T07:27:56.816Z",
+        "age": 19
+      },
+      "phone": "30194201",
+      "cell": "98618132",
+      "id": {
+        "name": "FN",
+        "value": "11095531514"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/19.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/19.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/19.jpg"
+      },
+      "nat": "NO"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Carolyn",
+        "last": "Thompson"
+      },
+      "location": {
+        "street": {
+          "number": 1346,
+          "name": "Northaven Rd"
+        },
+        "city": "Perth",
+        "state": "New South Wales",
+        "country": "Australia",
+        "postcode": 808,
+        "coordinates": {
+          "latitude": "-54.9718",
+          "longitude": "-111.5497"
+        },
+        "timezone": {
+          "offset": "+5:30",
+          "description": "Bombay, Calcutta, Madras, New Delhi"
+        }
+      },
+      "email": "carolyn.thompson@example.com",
+      "login": {
+        "uuid": "3202f640-1eea-42d1-945d-0b2e0b28a3e8",
+        "username": "ticklishbutterfly777",
+        "password": "honor",
+        "salt": "IARPJKvg",
+        "md5": "c2261300a98520fe68dc33da9b21f4c9",
+        "sha1": "c35fb2e84d088ef97857859bbddc38f1336070de",
+        "sha256": "02928626d44d21986cf6905a06a055f7162b1830a3be6fbcb6f2ef9c18380cc3"
+      },
+      "dob": {
+        "date": "1945-12-15T06:33:36.756Z",
+        "age": 79
+      },
+      "registered": {
+        "date": "2017-02-09T18:47:00.674Z",
+        "age": 8
+      },
+      "phone": "03-5533-5656",
+      "cell": "0432-013-057",
+      "id": {
+        "name": "TFN",
+        "value": "241567818"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/2.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/2.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/2.jpg"
+      },
+      "nat": "AU"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Mrs",
+        "first": "Jurema",
+        "last": "Ribeiro"
+      },
+      "location": {
+        "street": {
+          "number": 6200,
+          "name": "Rua Paraná "
+        },
+        "city": "São José dos Campos",
+        "state": "Paraíba",
+        "country": "Brazil",
+        "postcode": 90339,
+        "coordinates": {
+          "latitude": "-12.2533",
+          "longitude": "74.4577"
+        },
+        "timezone": {
+          "offset": "-1:00",
+          "description": "Azores, Cape Verde Islands"
+        }
+      },
+      "email": "jurema.ribeiro@example.com",
+      "login": {
+        "uuid": "a99517d1-c0b0-4588-868b-895402519c47",
+        "username": "crazyladybug884",
+        "password": "harley",
+        "salt": "XmGyR77P",
+        "md5": "2e52d14d091c0c8f564ba5c3ede089f9",
+        "sha1": "69a334550f34841d6d910c7d9775bb6ea28ceb97",
+        "sha256": "f2f08c6bcdd91d6ce2f1b8edc0c2ca120f97667f99f83e6fbce7c54154172b76"
+      },
+      "dob": {
+        "date": "1973-01-02T13:54:42.340Z",
+        "age": 52
+      },
+      "registered": {
+        "date": "2010-08-22T14:44:38.502Z",
+        "age": 14
+      },
+      "phone": "(85) 2584-1870",
+      "cell": "(79) 5853-8808",
+      "id": {
+        "name": "CPF",
+        "value": "215.780.477-87"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/79.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/79.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/79.jpg"
+      },
+      "nat": "BR"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "Johanne",
+        "last": "Petersen"
+      },
+      "location": {
+        "street": {
+          "number": 2716,
+          "name": "Torvegade"
+        },
+        "city": "Brøndby Strand",
+        "state": "Hovedstaden",
+        "country": "Denmark",
+        "postcode": 78664,
+        "coordinates": {
+          "latitude": "-70.0232",
+          "longitude": "16.2849"
+        },
+        "timezone": {
+          "offset": "-4:00",
+          "description": "Atlantic Time (Canada), Caracas, La Paz"
+        }
+      },
+      "email": "johanne.petersen@example.com",
+      "login": {
+        "uuid": "abe2e01a-8d76-497d-8ec3-86bffa647d76",
+        "username": "blackelephant945",
+        "password": "burner",
+        "salt": "exERnqqy",
+        "md5": "191b8690349a2579e509092e0d488166",
+        "sha1": "b9c6c9a7c0e0340882561182b66c76069a79556a",
+        "sha256": "14c2afe3965b59cc58bb14ff8017ddfacbe4d0531ff54304d97ae017c3e81e72"
+      },
+      "dob": {
+        "date": "1978-03-01T23:31:19.734Z",
+        "age": 47
+      },
+      "registered": {
+        "date": "2011-10-20T17:12:09.036Z",
+        "age": 13
+      },
+      "phone": "25919001",
+      "cell": "73566594",
+      "id": {
+        "name": "CPR",
+        "value": "010378-7868"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/63.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/63.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/63.jpg"
+      },
+      "nat": "DK"
+    }
+  ],
+  "info": {
+    "seed": "02d4fdf0da5d8652",
+    "results": 5,
+    "page": 1,
+    "version": "1.4"
+  }
+}
