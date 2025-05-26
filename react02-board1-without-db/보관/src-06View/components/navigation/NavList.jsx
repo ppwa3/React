@@ -1,12 +1,12 @@
+//목록의 네비게이션
 function NavList(props) {
-  return (<>
+  return (
     <nav>
-      <a href="/" onClick={function(event) {
+      <a href="/" onClick={function(event){
         event.preventDefault();
         props.onChangeMode();
       }}>글쓰기</a>
-    </nav>
-  </>); 
+   </nav>
+  )
 }
-
-export default NavList
+export default NavList;

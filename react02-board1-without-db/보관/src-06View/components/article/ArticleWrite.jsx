@@ -1,27 +1,28 @@
+//작성
 function ArticleWrite(props) {
-  return (<>
+  return (
     <article>
     <form>
-      <table id="boardTable">
-        <tbody>
-          <tr>
-            <td>작성자</td>
-            <td><input type="text" name="writer" /></td>
-          </tr>
-          <tr>
-            <td>제목</td>
-            <td><input type="text" name="title" /></td>
-          </tr>
-          <tr>
-            <td>내용</td>
-            <td><textarea name="contents" rows="3"></textarea></td>
-          </tr>
-        </tbody>
-      </table>
-      <input type="submit" value="전송" />
+    <table id="boardTable">
+      <tbody>
+        <tr>
+          <th>작성자</th>
+          <th><input type="text" name="writer" /></th>
+        </tr>
+        <tr>
+          <th>제목</th>
+          <th ><input type="text" name="title" /></th>
+        </tr>
+        <tr>
+          <th>내용</th>
+          <th><textarea name="contents" cols="22" rows="3"></textarea></th>
+        </tr>
+      </tbody>
+    </table>
+    <input type="submit" value="전송" />
     </form>
-    </article>
-  </>); 
+   </article>
+  )
 }
 
-export default ArticleWrite
+export default ArticleWrite;

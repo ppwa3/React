@@ -1,13 +1,11 @@
-function ArticleView(props) {
-  // 선택한 객체를 콘솔에서 확인
-  console.log('선택한 게시물:', props.selectRow);
 
-  return (<>
+function ArticleView(props){
+  console.log("선택한 게시물:", props.selectRow);
+  return (
     <article>
       <table id="boardTable">
         <colgroup>
-          <col width="20%" />
-          <col width="*" />
+          <col width="20%" /><col width="*" />
         </colgroup>
         <tbody>
           <tr>
@@ -29,7 +27,7 @@ function ArticleView(props) {
         </tbody>
       </table>
     </article>
-  </>); 
+  );
 }
 
-export default ArticleView
+export default ArticleView;

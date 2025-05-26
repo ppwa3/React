@@ -1,12 +1,13 @@
+//쓰기의 네비게이션
 function NavWrite(props) {
-  return (<>
+  return (
     <nav>
-      <a href="/" onClick={function(event) {
+      <a href="/" onClick={function(event){
         event.preventDefault();
         props.onChangeMode();
       }}>목록</a>
-    </nav>
-  </>); 
+   </nav>
+  )
 }
 
-export default NavWrite
+export default NavWrite;

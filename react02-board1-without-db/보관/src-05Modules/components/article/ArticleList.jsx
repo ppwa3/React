@@ -1,6 +1,7 @@
-function ArticleList(props){
+//게시판 목록
+function ArticleList(props) {
   const lists = [];
-  for(let i=0 ; i<props.boardData.length ; i++){
+  for(let i=0 ; i<props.boardData.length ; i++) {
     let row = props.boardData[i];
     lists.push(
       <tr key={row.no}>
@@ -12,10 +13,10 @@ function ArticleList(props){
         <td className="cen">{row.writer}</td>
         <td className="cen">{row.date}</td>
       </tr>
-    )
+    );
   }
   return (
-  <article>
+    <article>
     <table id="boardTable">
       <thead>
         <tr>
@@ -29,8 +30,8 @@ function ArticleList(props){
         {lists}
       </tbody>
     </table>
-  </article>
-);
+   </article>
+  )
 }
 
 export default ArticleList;
