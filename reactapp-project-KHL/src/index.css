@@ -1,82 +1,322 @@
   body {
-      font-family: 'Arial', sans-serif;
-      background: #f7f7f7;
-      padding: 40px;
-    }
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    padding: 40px;
+  }
+
   .container {
-      max-width: 600px;
-      margin: 0 auto;
-      background: white;
-      padding: 30px 40px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-    }
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
 
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
-    }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
 
-    .form-group label {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
 
-    .form-group input, 
-    .form-group select {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
-    }
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
 
-    .form-row {
-      display: flex;
-      gap: 10px;
-    }
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
 
-    .form-row .form-group {
-      flex: 1;
-    }
+  .form-row .form-group {
+    flex: 1;
+  }
 
-    .readonly {
-      background-color: #eee;
-    }
+  .readonly {
+    background-color: #fff;
+  }
 
-    .form-group .btn-check {
-      margin-top: 10px;
-      padding: 8px 12px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 13px;
-      width: fit-content;
-    }
+  .form-group .btn-check {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #eb8999;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    width: fit-content;
+  }
 
-    .form-group .btn-check:hover {
-      background: #0056b3;
-    }
+  .form-group .btn-check:hover {
+    background: #e77084;
+  }
 
-    .submit-btn {
-      margin-top: 25px;
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      border: none;
-      background: #28a745;
-      color: white;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+  .submit-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background: #eb8999;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
 
-    .submit-btn:hover {
-      background: #218838;
-    }
+  .submit-btn:hover {
+    background: #e77084;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* 로그인 박스 */
+  /* .login-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+  }
+
+  /* 제목 */
+  /*.login-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #2c3e50;
+  }
+
+  /* 입력 필드 */
+  /* .input-field {
+    width: 80%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  } */
+
+  /* .input-field:focus {
+    border-color: #3498db;
+    outline: none;
+  } */
+
+  /* 로그인 버튼 */
+  /* .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  } */
+
+  /* .login-button:hover {
+    background-color: #2980b9;
+  } */
+
+  /* 링크들 */
+  /* .login-links {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #555;
+  } */
+
+  /* .login-links a {
+    text-decoration: none;
+    color: #3498db;
+    margin: 0 5px;
+  }
+
+  .login-links span {
+    color: #bbb;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #d2e3f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+
+  /* 컨테이너 */
+  /* .profile-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 360px;
+    text-align: center;
+  } */
+
+  /* 제목 */
+  /* .profile-title {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #2d4059;
+  } */
+
+  /* 입력 필드 */
+  /* .input-field {
+    width: 85%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  } */
+
+  /* .input-field:focus {
+    border-color: #4a90e2;
+    outline: none;
+  } */
+
+  /* .input-field:disabled {
+    background-color: #f3f3f3;
+    color: #999;
+    cursor: not-allowed;
+  } */
+
+  /* 저장 버튼 */
+  /* .save-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  } */
+
+  /* .save-button:hover {
+    background-color: #357abd;
+  }  */ 
+
+
+  /* 자료게시판 */
+
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Apple SD Gothic Neo', 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #fffafc, #fcefee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board-container {
+  width: 85%;
+  max-width: 950px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(255, 204, 218, 0.2);
+}
+
+.board-title {
+  font-size: 23px;
+  color: #d47b9d;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.board-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 28px;
+}
+
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.board-table th,
+.board-table td {
+  padding: 14px 16px;
+  text-align: center;
+  border-bottom: 1px solid #f0dfe6;
+}
+
+.board-table thead {
+  background-color: #fdebf0;
+}
+
+.board-table th {
+  color: #8b4f65;
+  font-weight: bold;
+}
+
+.board-table tbody tr:hover {
+  background-color: #fff6f8;
+}
+
+.board-table a {
+  color: #d16488;
+  text-decoration: none;
+}
+
+.board-table a:hover {
+  text-decoration: underline;
+}
+
+.board-footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.write-button {
+  background-color: #d97c9f;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.write-button:hover {
+  background-color: #c5658a;
+}

@@ -9,6 +9,6 @@ function Home(props) {
     <Link to="/data">자료 게시판</Link><br />
     <Link to="/free">자유 게시판</Link><br />
     <Link to="/qa">Q&A 게시판</Link>
-  </>); 
+  </>);
 }
 export default Home; 
