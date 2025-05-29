@@ -2,7 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 import InforMem from './components/login/informem';
 import JoinMem from "./components/login/JoinMem";
-import Log from "./components/login/log";
+import Log from "./components/login/Log";
 import DataBoard from "./components/board/databoard";
 import FreeBoard from "./components/board/freeboard";
 import QABoard from "./components/board/QAboard";
