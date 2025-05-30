@@ -90,7 +90,6 @@ function JoinMem() {
   // alert('회원가입 완료!');
   //form.reset();
   return (<>
-    <Link to="/">Home</Link>
     <form onSubmit={(event) => {
       event.preventDefault();
       //회원가입
@@ -138,7 +137,7 @@ function JoinMem() {
 
       navigate("/");
     }}>
-
+      <button><Link to="/">Home</Link></button>
       <h2>회원가입</h2>
       <div class="form-row">
         <div class="form-group">

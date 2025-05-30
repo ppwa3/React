@@ -1,11 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function InforMem(props) {
+  
   return (<>
-    <Link to="/">Home</Link>
     <h2>회원정보수정</h2>
     <div class="profile-container">
     <form class="profile-form">
+      <button><a href="/edit-profile">회원정보수정</a></button>
       <input type="text" placeholder="이름" name="name" class="input-field" />
       <input type="text" placeholder="아이디" name="username" class="input-field" disabled />
       <input type="password" placeholder="새 비밀번호" name="password" class="input-field" />

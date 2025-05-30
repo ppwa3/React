@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-
+// 리스트(List)
 function DataBoard(props) {
+
   return (<>
-    <Link to="/">Home</Link>
     <div class="board-container">
       <h2 class="board-title">📁 자료 게시판</h2>
       <table class="board-table"/>

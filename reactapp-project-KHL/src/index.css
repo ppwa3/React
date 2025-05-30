@@ -1,322 +1,379 @@
-  body {
-    font-family: 'Arial', sans-serif;
-    background: #f7f7f7;
-    padding: 40px;
-  }
-
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 30px 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-
-  h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-
-  .form-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  .form-group input,
-  .form-group select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-  }
-
-  .form-row {
-    display: flex;
-    gap: 10px;
-  }
-
-  .form-row .form-group {
-    flex: 1;
-  }
-
-  .readonly {
-    background-color: #fff;
-  }
-
-  .form-group .btn-check {
-    margin-top: 10px;
-    padding: 8px 12px;
-    background: #eb8999;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 13px;
-    width: fit-content;
-  }
-
-  .form-group .btn-check:hover {
-    background: #e77084;
-  }
-
-  .submit-btn {
-    margin-top: 25px;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    background: #eb8999;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-
-  .submit-btn:hover {
-    background: #e77084;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #e0eafc, #cfdef3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  /* 로그인 박스 */
-  /* .login-container {
-    background-color: #ffffff;
-    padding: 40px 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    width: 320px;
-    text-align: center;
-  }
-
-  /* 제목 */
-  /*.login-title {
-    margin-bottom: 30px;
-    font-size: 28px;
-    color: #2c3e50;
-  }
-
-  /* 입력 필드 */
-  /* .input-field {
-    width: 80%;
-    padding: 12px 14px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-  } */
-
-  /* .input-field:focus {
-    border-color: #3498db;
-    outline: none;
-  } */
-
-  /* 로그인 버튼 */
-  /* .login-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #3498db;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-  } */
-
-  /* .login-button:hover {
-    background-color: #2980b9;
-  } */
-
-  /* 링크들 */
-  /* .login-links {
-    margin-top: 20px;
-    font-size: 13px;
-    color: #555;
-  } */
-
-  /* .login-links a {
-    text-decoration: none;
-    color: #3498db;
-    margin: 0 5px;
-  }
-
-  .login-links span {
-    color: #bbb;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #f0f4ff, #d2e3f5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  } */
-
-  /* 컨테이너 */
-  /* .profile-container {
-    background-color: #ffffff;
-    padding: 40px 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    width: 360px;
-    text-align: center;
-  } */
-
-  /* 제목 */
-  /* .profile-title {
-    margin-bottom: 30px;
-    font-size: 26px;
-    color: #2d4059;
-  } */
-
-  /* 입력 필드 */
-  /* .input-field {
-    width: 85%;
-    padding: 12px 14px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-  } */
-
-  /* .input-field:focus {
-    border-color: #4a90e2;
-    outline: none;
-  } */
-
-  /* .input-field:disabled {
-    background-color: #f3f3f3;
-    color: #999;
-    cursor: not-allowed;
-  } */
-
-  /* 저장 버튼 */
-  /* .save-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4a90e2;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-  } */
-
-  /* .save-button:hover {
-    background-color: #357abd;
-  }  */ 
-
-
-  /* 자료게시판 */
-
-  body {
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Apple SD Gothic Neo', 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #fffafc, #fcefee);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background-color: #fdfcfa;
+  color: #333;
 }
 
-.board-container {
-  width: 85%;
-  max-width: 950px;
-  background-color: #ffffff;
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(255, 204, 218, 0.2);
-}
-
-.board-title {
-  font-size: 23px;
-  color: #d47b9d;
+h2 {
   text-align: center;
-  margin-bottom: 8px;
+  margin-top: 40px;
+  font-size: 1.8rem;
+  color: #222;
 }
 
-.board-subtitle {
-  text-align: center;
-  font-size: 14px;
-  color: #888;
-  margin-bottom: 28px;
-}
-
-.board-table {
-  width: 100%;
-  border-collapse: collapse;
+/* 전체 폼 컨테이너 */
+form {
+  max-width: 600px;
+  margin: 40px auto;
   background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
 }
 
-.board-table th,
-.board-table td {
-  padding: 14px 16px;
-  text-align: center;
-  border-bottom: 1px solid #f0dfe6;
+/* form-row: 가로 정렬을 위한 행 */
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.board-table thead {
-  background-color: #fdebf0;
+/* form-group: 하나의 label + input 조합 */
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  margin-bottom: 16px;
 }
 
-.board-table th {
-  color: #8b4f65;
+label {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #f2a0b5;
+  box-shadow: 0 0 0 3px rgba(242, 160, 181, 0.2);
+  outline: none;
+}
+
+.readonly {
+  background-color: #f9f9f9;
+  color: #aaa;
+  pointer-events: none;
+}
+
+/* 버튼 스타일 */
+button {
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-check {
+  background-color: #fff;
+  border: 1px solid #f2a0b5;
+  color: #f2a0b5;
+  font-weight: 500;
+}
+
+.btn-check:hover {
+  background-color: #f2a0b5;
+  color: #fff;
+}
+
+/* 최하단 제출 버튼 */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(to right, #f8a8c5, #d17b88);
+  color: white;
   font-weight: bold;
+  margin-top: 20px;
 }
 
-.board-table tbody tr:hover {
-  background-color: #fff6f8;
+.submit-btn:hover {
+  background: linear-gradient(to right, #e18fac, #b76681);
 }
 
-.board-table a {
-  color: #d16488;
+/* 반응형 */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* 로그인 */
+
+/* 기본 폰트 및 배경 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+a {
   text-decoration: none;
+  color: #6c7a89;
 }
 
-.board-table a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-.board-footer {
-  margin-top: 20px;
-  text-align: right;
+/* 상단 Home 링크 */
+a:first-of-type {
+  display: inline-block;
+  margin: 30px;
+  color: #5c7080;
+  font-weight: 500;
 }
 
-.write-button {
-  background-color: #d97c9f;
+/* 로그인 제목 */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  color: #34495e;
+}
+
+/* 로그인 컨테이너 */
+.login-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* 로그인 폼 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 입력 필드 */
+.input-field {
+  padding: 12px 16px;
+  border: 1px solid #d3dce6;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #a2bfd2;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(162, 191, 210, 0.2);
+}
+
+/* 로그인 버튼 */
+.login-button {
+  padding: 12px;
+  background-color: #a2bfd2;
   color: white;
+  font-weight: bold;
   border: none;
-  padding: 10px 18px;
-  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #8aa9c0;
+}
+
+/* 로그인 링크 */
+.login-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* 회원정보 수정 */
+
+body {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #2f3640;
+}
+
+/* 제목 */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 50px;
+  color: #34495e;
+}
+
+/* 프로필 컨테이너 */
+.profile-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* 폼 */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 입력 필드 */
+.input-field {
+  padding: 14px 18px;
+  border: 1px solid #dcdfe6;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fafbfd;
+}
+
+.input-field:focus {
+  border-color: #a2bfd2;
+  box-shadow: 0 0 0 4px rgba(162, 191, 210, 0.2);
+  outline: none;
+}
+
+.input-field:disabled {
+  background-color: #f1f1f1;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* 저장 버튼 */
+.save-button {
+  margin-top: 10px;
+  padding: 14px;
+  background: linear-gradient(135deg, #a2bfd2, #7fa4bc);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.save-button:hover {
+  background: linear-gradient(135deg, #90b0c6, #6d96b0);
+}
+
+/* 자유게시판 */
+
+.board-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 제목 */
+.board-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2a2a2a;
+  font-weight: 700;
+}
+
+/* 작성 폼 */
+.board-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.board-input {
+  border: 1px solid #ddd;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.board-input.title {
+  height: 45px;
+}
+
+.board-input.content {
+  height: 120px;
+}
+
+.board-submit {
+  background: #4285f4;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
-.write-button:hover {
-  background-color: #c5658a;
+.board-submit:hover {
+  background: #3367d6;
+}
+
+/* 게시글 리스트 */
+.board-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-item {
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background-color: #fafafa;
+  transition: transform 0.2s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.post-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-content {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #999;
 }
