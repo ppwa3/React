@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { firestore } from "../../../config/firestoreConfig";
 import { useEffect, useState } from "react";
 import { getDoc, deleteDoc, doc } from "firebase/firestore";
@@ -8,6 +8,7 @@ function FreeBoardView(props) {
   const [post, setPost] = useState([]);
   const [loading, setLoading] = useState();
   const params = useParams();
+  const navigate = useNavigate();
 
   const handleDelete = async (id) => {
     const confirmDelete = window.confirm("삭제하시겠습니까?");
@@ -82,8 +83,11 @@ function FreeBoardView(props) {
                 <td className="cen">{post.writer}</td>
                 <td className="cen">{post.date}</td>
                 <td className="cen">
-                  <button onClick={() => handleDelete(post.id)} className="delete-button">
+                  <button onClick={() => {handleDelete(post.id); navigate("/freelist");}} className="delete-button">
                     삭제
+                  </button>
+                  <button onClick={() => {navigate("/freeedit/"+ params.id);}} className="delete-button">
+                    수정
                   </button>
                 </td>
               </tr>

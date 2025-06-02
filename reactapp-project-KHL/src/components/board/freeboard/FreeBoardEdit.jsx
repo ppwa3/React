@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { firestore } from "../../../config/firestoreConfig";
 import { useState } from "react";
 import { useEffect } from "react";
-import { getDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 
 //리스트
 function FreeBoardEdit(props) {
@@ -11,6 +11,7 @@ function FreeBoardEdit(props) {
   //게시글 목록을 저장할 state를 생성
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
+  const [nowdata, setNowData] = useState({});
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -20,6 +21,7 @@ function FreeBoardEdit(props) {
         if (docSnap.exists()) {
           const data = docSnap.data();
           setTitle(data.title);
+          setNowData(data);
           setContent(data.content);
         } else {
           alert("게시글을 찾을 수 없습니다.");
@@ -34,17 +36,19 @@ function FreeBoardEdit(props) {
   const handleUpdate = async () => {
     try {
       const docRef = doc(firestore, "freeboard", id);
-      await updateDoc(docRef, {
+      //setDoc은 덮어쓰기하는 친구
+      await setDoc(docRef, { ...nowdata,
         title,
         content,
         updatedAt: new Date().toLocaleString(), // 수정 시간 기록
       });
       alert("게시글이 수정되었어요!");
-      navigate("/freeboard");
+      navigate("/freelist");
     } catch (error) {
       console.error("게시글 수정 오류:", error);
     }
   };
+
   return (<>
       <div className="p-4">
       <h2>게시글 수정</h2>
