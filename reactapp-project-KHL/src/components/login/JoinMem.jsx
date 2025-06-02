@@ -5,7 +5,6 @@ import { firestore } from "../../config/firestoreConfig";
 import { collection, doc, getDocs, setDoc } from "firebase/firestore";
 
 
-
 function JoinMem() {
   const [fireId, setFireId] = useState([]);
   const [checkResult, setCheckResult] = useState(false);

@@ -4,7 +4,7 @@ function List(props) {
   /*
   App컴포넌트에서 프롭스를 통해 전달한 배열데이터를 고차함수인 map()을 통해
   반복해서 출력할 목록을 생성한다. */
-  const lists = props.boardData.map((row, idx)=>{
+  const lists = props.boardData.map((row)=>{
     return (
       <tr key={row.no}>
         <td className="cen">{row.no}</td>

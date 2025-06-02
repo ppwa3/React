@@ -279,101 +279,194 @@ h2 {
   background: linear-gradient(135deg, #90b0c6, #6d96b0);
 }
 
-/* 자유게시판 */
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
+.board-table th,
+.board-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.board-table th {
+  background-color: #f3f4f6;
+  color: #333;
+  font-weight: bold;
+}
+
+.title-link {
+  color: #2c7be5;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  background-color: #dd93b2;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.content-row {
+  background-color: #fafafa;
+}
+
+.content-cell {
+  text-align: left;
+  padding: 16px;
+  font-size: 15px;
+}
+
+/* 상단메뉴 */
+.nav {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 (원하면 space-between 도 가능) */
+  gap: 20px; /* 링크 간 간격 */
+  background-color: #f0f0f0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #007bff; /* 마우스 올렸을 때 색상 */
+}
+
+/* 자유게시판 쓰기 부분 */
 .board-container {
   max-width: 800px;
-  margin: 50px auto;
-  padding: 2rem;
-  background-color: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* 제목 */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #2980b9;
+}
+
 .board-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #2a2a2a;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #2c3e50;
 }
 
-/* 작성 폼 */
-.board-post-form {
+.write-form {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 10px;
 }
 
-.board-input {
-  border: 1px solid #ddd;
-  padding: 0.8rem 1rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  resize: none;
+.input-title,
+.input-content {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-.board-input.title {
-  height: 45px;
-}
-
-.board-input.content {
-  height: 120px;
-}
-
-.board-submit {
-  background: #4285f4;
+.submit-button {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background-color: #27ae60;
   color: white;
-  font-weight: bold;
-  padding: 0.8rem 1rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-.board-submit:hover {
-  background: #3367d6;
+.submit-button:hover {
+  background-color: #1e8449;
 }
 
-/* 게시글 리스트 */
-.board-posts {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.post-item {
-  padding: 1.2rem;
-  margin-bottom: 1rem;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  background-color: #fafafa;
-  transition: transform 0.2s ease;
+.board-table th,
+.board-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
 }
 
-.post-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-}
-
-.post-title {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+.board-table th {
+  background-color: #f8f8f8;
   font-weight: bold;
-  color: #333;
+}
+/* 자유게시판 list */
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.post-content {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 0.5rem;
+.board-table thead {
+  background-color: #f4f6f8;
 }
 
-.post-meta {
-  font-size: 0.85rem;
-  color: #999;
+.board-table th, .board-table td {
+  padding: 14px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.board-table .title-cell {
+  text-align: left;
+  padding-left: 12px;
+}
+
+.title-link {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title-link:hover {
+  text-decoration: underline;
+  color: #1e90ff;
+}
+
+.cen {
+  text-align: center;
 }

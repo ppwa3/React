@@ -1,4 +1,4 @@
-// App.js
+//화면 이동을 위한 훅 임포트
 import { Routes, Route, Outlet } from "react-router-dom";
 import InforMem from "./components/login/inforMem";
 import JoinMem from "./components/login/JoinMem";
@@ -9,12 +9,15 @@ import Home from "./Home";
 import TopNavi from "./components/TopNavi";
 import Footer from "./components/Footer";
 import DataBoardView from "./components/board/databoard/DataBoardView";
-import FreeBoard from "./components/board/freeboard/FreeBoard";
+import FreeBoardList from "./components/board/freeboard/FreeBoardList";
+import FreeBoardView from "./components/board/freeboard/FreeBoardView";
+import FreeBoardWrite from "./components/board/freeboard/FreeBoardWrite";
+import FreeBoardEdit from "./components/board/freeboard/FreeBoardEdit";
 
 const Layout = ({ isLoggedIn }) => {
   return (
     <div>
-      <header><TopNavi isLoggedIn={isLoggedIn} /></header>
+      <nav><TopNavi isLoggedIn={isLoggedIn} /></nav>
       <article>
         <Outlet />
       </article>
@@ -23,9 +26,8 @@ const Layout = ({ isLoggedIn }) => {
   );
 };
 
-function App() {
+function App(props) {
 
-  
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -35,9 +37,11 @@ function App() {
         <Route path="login" element={<Log />} />
         <Route path="data" element={<DataBoard />} />
         <Route path="view" element={<DataBoardView />} />
-        <Route path="free" element={<FreeBoard />} />
+        <Route path="/freeview/:id" element={<FreeBoardView />} />
+        <Route path="freelist" element={<FreeBoardList />} />
+        <Route path="freewrite" element={<FreeBoardWrite />} />
+        <Route path="freeedit/:id" element={<FreeBoardEdit />} />
         <Route path="qa" element={<QABoard />} />
-        
       </Route>
     </Routes>
   );
