@@ -26,20 +26,22 @@ function TopNavi(props) {
   useEffect(() => {
     getUser();
   }, [])
+
+
   return (<>
     <nav className="nav">
       <h3> 𝑩𝒆𝒍𝒖𝒔𝒉𝒊 𝑪𝒐𝒎𝒑𝒂𝒏𝒚</h3>
       <Link to="/">Home</Link>&nbsp;&nbsp;
-      {isLoggedIn ? 
-      (<Link to="/informem">회원정보</Link>):
-      (<Link to="/joinmem">회원가입</Link>)}<br />
+      {isLoggedIn ?
+        (<Link to="/informem">회원정보</Link>) :
+        (<Link to="/joinmem">회원가입</Link>)}<br />
       <Link to="/data">자료 게시판</Link><br />
       <Link to="/freewrite">자유 게시판</Link><br />
       <Link to="/qnalist">Q&A 게시판</Link><br />
       {/* 삼항연산자를 사용해서 로그인 상태에 따른 렌더링 */}
-      {isLoggedIn ? 
-      (<button type="button" onClick={logout}>로그아웃</button>):
-      (<Link to="/login">로그인</Link>)}
+      {isLoggedIn ?
+        (<button type="button" onClick={logout}>로그아웃</button>) :
+        (<Link to="/login">로그인</Link>)}
     </nav>
   </>);
 }

@@ -45,12 +45,11 @@ function FreeBoardList(props) {
   //row는 props.freeboard안에 들어있는 하나의 게시글 정보이다.
   return (<>
     <div className="board-container">
-      <Link to="/freewrite">글쓰기</Link>
       <header>
         <h2 className="board-title">💬 자유게시판</h2>
       </header>
+      <Link to="/freewrite">글쓰기</Link>
       <div className="board-post-form">
-        <button className="board-submit">작성하기</button>
       </div>
       <nav>
       </nav>

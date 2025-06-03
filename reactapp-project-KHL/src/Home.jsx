@@ -2,15 +2,14 @@ import { useState } from "react";
 
 const productData = [
   [
-    { name: "튠", img: "/images/tune.jpg" },
     { name: "토아스 앰플", img: "/images/ampule.PNG" },
-    { name: "토아스 재생크림", img: "/images/toas-cream.jpg" },
   ],
   [
-    { name: "토너", img: "/images/toner.jpg" },
-    { name: "에센스", img: "/images/essence.jpg" },
-    { name: "립밤", img: "/images/lip.jpg" },
+    { name: "튠", img: "/images/tune.png" },
   ],
+  [
+    { name: "토아스 재생크림", img: "/images/cream.jpg" }
+  ]
 ];
 
 function Home() {
@@ -45,7 +44,7 @@ function Home() {
       </div>
     </section> */}
     <section className="best-sellers">
-      <h2 style={{ margin: '0px', paddingTop: '30px' }}>💗 베스트셀러</h2>
+      <h2 style={{ margin: '10px', paddingTop: '10px' ,marginBottom: '60px', marginTop: '0px'}}> 𝐵𝑒𝑙𝑢𝑠ℎ𝑖 𝐵𝑒𝑠𝑡𝑠𝑒𝑙𝑙𝑒𝑟 </h2>
       <div className="product-grid">
         <section className="category-highlight fade-in">
           {productData[page].map((product, idx) => (
@@ -56,6 +55,7 @@ function Home() {
           ))}
         </section>
         <button onClick={nextPage}>다음 보기 ➡</button>
+        
       </div>
     </section>
   </>)
