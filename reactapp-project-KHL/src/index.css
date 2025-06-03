@@ -131,13 +131,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 상단 Home 링크 */
-a:first-of-type {
-  display: inline-block;
-  margin: 30px;
-  color: #5c7080;
-  font-weight: 500;
-}
+
 
 /* 로그인 제목 */
 h2 {
@@ -333,24 +327,27 @@ h2 {
 
 /* 상단메뉴 */
 .nav {
-  display: flex;
-  justify-content: center; /* 가운데 정렬 (원하면 space-between 도 가능) */
-  gap: 20px; /* 링크 간 간격 */
-  background-color: #f0f0f0;
-  padding: 15px 0;
-  border-bottom: 1px solid #ddd;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* 보라-파랑 그라데이션 */
+  padding: 1rem 2rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .nav a {
+  display: inline-block;
+  margin: 0.3rem 1rem;
+  color: white;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
 .nav a:hover {
-  color: #007bff; /* 마우스 올렸을 때 색상 */
+  color: #ffeb3b; /* 노란색 강조 효과 */
+  transform: scale(1.1);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 /* 자유게시판 쓰기 부분 */
@@ -367,16 +364,30 @@ h2 {
   margin-bottom: 20px;
 }
 
-.nav-button {
-  background-color: #3498db;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 6px;
-  text-decoration: none;
+.nav {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
-.nav-button:hover {
-  background-color: #2980b9;
+.nav a {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  color: #5a5a5a;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+}
+
+.nav a:hover {
+  background-color: #e0ecff;
+  color: #2b4b82;
 }
 
 .board-title {
@@ -469,4 +480,105 @@ h2 {
 
 .cen {
   text-align: center;
+}
+.site-footer {
+  background: linear-gradient(120deg, #e8f0fe 0%, #e8f0fe 100%);
+  padding: 2.5rem 0;
+  text-align: center;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.03);
+  border-top: 1px solid #ddd;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #6a6a6a;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.hero-text {
+  background: linear-gradient(to right, #fef6f9, #f2f6ff);
+  padding: 80px 20px;
+  text-align: center;
+  color: #5a5a5a;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin-bottom: 10px;
+}
+.mainback {
+  background-color: #fff8f0;
+}
+/* 베스트셀러 영역 */
+.best-sellers {
+  /* padding: 60px 20px; */
+  background-color: #fff8f0;
+  text-align: center;
+  height: 800px;
+}
+
+.best-sellers h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* 상품 그리드 */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 카테고리 하이라이트 */
+.category-highlight {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.category-card {
+  background-color: #f2e9e4;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  background-color: #e9ecef;
+}
+
+/* Shop Now 버튼 */
+button {
+  margin-top: 40px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #ffc4d6, #b5ead7);
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #b5ead7, #ffc4d6);
 }

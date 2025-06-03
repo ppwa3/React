@@ -1,8 +1,10 @@
 function Footer(props) {
   return (<>
-      <footer className="py-5 bg-dark">
-            <div className="container px-4 px-lg-5"><p className="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-      </footer>
+    <footer className="site-footer">
+      <div className="footer-container">
+        <p className="footer-text">📞call : 010-0000-0000📞 Instagram Id : star_01</p>
+      </div>
+    </footer>
   </>);
 }
 export default Footer;
