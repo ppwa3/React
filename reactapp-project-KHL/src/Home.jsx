@@ -20,29 +20,6 @@ function Home() {
     setPage((prev) => (prev + 1) % productData.length);
   };
   return (<>
-    {/* <section className="best-sellers">
-      <h2 style={{margin:'0px', paddingTop:'30px'}}>💗 베스트셀러</h2>
-      <div className="product-grid">
-
-        <section className="category-highlight">
-          <div className="category-card">
-            <img src="/images/tune.jpg" alt="튠" className="category-image" />
-            <p>튠</p>
-          </div>
-
-          <div className="category-card">
-            <img src="./images/ampule.PNG"  className="category-image" />
-            <p>토아스 앰플</p>
-          </div>
-
-          <div className="category-card">
-            <img src="/images/toas-cream.jpg" alt="토아스 재생크림" className="category-image" />
-            <p>토아스 재생크림</p>
-          </div>
-        </section>
-        <button>Shop Now</button>
-      </div>
-    </section> */}
     <section className="best-sellers">
       <h2 style={{ margin: '10px', paddingTop: '10px' ,marginBottom: '60px', marginTop: '0px'}}> 𝐵𝑒𝑙𝑢𝑠ℎ𝑖 𝐵𝑒𝑠𝑡𝑠𝑒𝑙𝑙𝑒𝑟 </h2>
       <div className="product-grid">

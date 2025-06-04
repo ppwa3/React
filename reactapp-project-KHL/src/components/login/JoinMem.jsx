@@ -1,16 +1,18 @@
+//주요 훅 : useState, useEffect 
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 import { firestore } from "../../config/firestoreConfig";
 import { collection, doc, getDocs, setDoc } from "firebase/firestore";
 
-
 function JoinMem() {
   const [fireId, setFireId] = useState([]);
+  //아이디 중복확인 결과 저장
   const [checkResult, setCheckResult] = useState(false);
+  //페이지 이동을 위한 훅
   const navigate = useNavigate();
 
-  // 데이터베이스에서 id 가져오는 함수
+  // firestore에서 id를 가져오는 비동기함수
   const getCollection = async () => {
     let trArray = [];
     const querySnapshot = await getDocs(collection(firestore, "members"));
@@ -22,7 +24,7 @@ function JoinMem() {
     });
     setFireId(trArray);
   }
-
+  //if문을 사용해서 아이디 길이 최소 조건 검사
   const showId = () => {
     const userId = document.getElementById('userId').value;
     if (userId.length < 4) {
@@ -88,6 +90,9 @@ function JoinMem() {
   //console.log('회원가입 정보:', newMember);
   // alert('회원가입 완료!');
   //form.reset();
+
+  /* 회원가입을 위한 form ,아이디 비밀번호 확인, 이메일/주소 등을 입력하면 firestore에
+  저장된다. */
   return (<>
     <form onSubmit={(event) => {
       event.preventDefault();
@@ -109,7 +114,7 @@ function JoinMem() {
       let z = event.target.zipcode.value;
       let r = event.target.roadadd.value;
       let d = event.target.detailadd.value;
-
+      //회원 정보를 객체로 정리
       const newMember = {
         id: i,
         name: n,
@@ -120,32 +125,31 @@ function JoinMem() {
         roadadd: r,
         detailadd: d
       };
-
+      //아이디 사용가능한지 안내창
       if (!checkResult) {
         alert("아이디가 사용가능한지 확인하세요.");
         return;
       }
-
+      //비밀번호 확인
       if (p !== event.target.confirmPassword.value) {
         alert("비밀번호가 일치하지 않습니다.");
         return false;
       }
 
-
+      // 위 조건 통과했으면 회원가입 처리 함수 실행
       memberWrite(newMember);
-
+      //회원가입 성공되면 홈화면으로 이동하는 navigate
       navigate("/");
     }}>
       <button><Link to="/">Home</Link></button>
-      <h2>회원가입</h2>
+      <h2 style={{marginTop:'0px'}}>회원가입</h2>
       <div class="form-row">
         <div class="form-group">
           <label for="userId">아이디</label>
           <input type="text" id="userId" name="userId" required />
         </div>
-        <div class="form-group">
-          <label>&nbsp;</label>
-          <button type="button" class="btn-check" onClick={showId}>중복확인</button>
+        <div class="form-group3">
+          <button type="button" class="" onClick={showId}>중복확인</button>
         </div>
       </div>
 
@@ -202,7 +206,7 @@ function JoinMem() {
         </div>
         <div class="form-group">
           <label>&nbsp;</label>
-          <input type="text" id="phone3" name="phone3" maxlength="4" required />
+          <input type="text" id="phone3" name="phone3" maxlength="3" required />
         </div>
       </div>
 
@@ -212,9 +216,9 @@ function JoinMem() {
           <input type="text" id="zipcode" name="zipcode" placeholder="우편번호" readOnly /><br />
         </div>
         <div class="form-group">
-          <label>&nbsp;</label>
-          <button type="button" onClick={handleAddressSearch} class="btn-check">주소 찾기</button><br />
-
+          {/* <label>&nbsp;</label> */}
+          <button type="button" onClick={handleAddressSearch}>주소 찾기</button>
+          <br />
         </div>
       </div>
 
@@ -228,7 +232,7 @@ function JoinMem() {
         <input type="text" id="detailAddress" name="detailadd" placeholder="상세주소" required />
       </div>
 
-      <button type="submit" class="submit-btn">회원가입</button>
+      <button type="submit" class="button-class">회원가입</button>
 
     </form >
   </>);

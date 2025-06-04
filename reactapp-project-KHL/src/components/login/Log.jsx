@@ -3,16 +3,23 @@ import { Link, useNavigate } from "react-router-dom";
 import { firestore } from "../../config/firestoreConfig";
 import { collection, getDocs } from "firebase/firestore";
 
+/*이 컴포넌트는 로그인 기능을 담당하는 컴포넌트 입니다.
+Firestore에 저장된 회원 정보를 불러와서 사용자가 입력한 아이디/비밀번호와 비교
+하여 로그인 처리를 하는 부분 */
+
 function Log(props) {
+  //로그인 상태를 저장하는 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  //로그인 시 useEffect 재실행을 위한 트리거
   const [trigger, setTrigger] = useState(false);
+  //전체 회원 정보를 배열에 저장
   const [allMembers, setAllMebers] = useState([]);
 
   const navigate = useNavigate();
-
+  //로그인 시 실행되는 함수
   const saveUser = async (e) => {
     e.preventDefault();
-
+    //전체 회원 목록에서 아이디랑 비밀번호가 일치하는지 확인
     for(let i = 0 ; i<allMembers.length ; i++) {
       if(e.target.inputId.value == allMembers[i].id && e.target.inputPw.value == allMembers[i].pass){
         alert("환영합니다♥");
@@ -57,7 +64,8 @@ function Log(props) {
     getUser();
     getMembers();
   },[trigger]);
-  
+// 로그인 화면이 뜨는 곳
+// form안에 아이디와 비밀번호 입력창, 로그인버튼 그리고 링크3개가 있다.
   return (<>
     <h2>로그인</h2>
     <div className="login-container">
@@ -71,7 +79,7 @@ function Log(props) {
           <span>|</span>
           <a href="#">비밀번호 찾기</a>
           <span>|</span>
-          <a href="/joinmem">회원가입</a>
+          <a href="/joinmem" style={{}}>회원가입</a>
         </div>
       </form>
     </div>

@@ -114,7 +114,6 @@ function FreeBoardWrite(props) {
           </tr>
         </thead>
         <tbody>
-          {/* 게시글 목록은 여기 map으로 출력하면 돼요 */}
           {/* posts.map((post, index) => ( ... )) */}
         </tbody>
       </table>

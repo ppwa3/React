@@ -59,7 +59,7 @@ function FreeBoardList(props) {
             <tr>
               <th className="col-no">No</th>
               <th className="col-title">제목</th>
-              <th className="col-writer">작성자</th>
+              <th className="col-writer">작성자</th> 
               <th className="col-date">날짜</th>
             </tr>
           </thead>

@@ -6,9 +6,9 @@ body {
   color: #333;
 }
 
-h2 {
+h2.board-title {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0px;
   font-size: 1.8rem;
   color: #222;
 }
@@ -24,21 +24,109 @@ form {
 }
 
 /* form-row: 가로 정렬을 위한 행 */
+form {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 제목 */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* 한 줄에 여러 필드를 배치 */
 .form-row {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
-/* form-group: 하나의 label + input 조합 */
-.form-group {
+/* 라벨 + 인풋 묶음 */
+.form-group,
+.form-group3 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-width: 200px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
+
+/* 라벨 */
+.form-group label,
+.form-group3 label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 입력 필드 */
+.form-group input,
+.form-group select,
+.form-group3 input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+}
+
+/* 버튼 - 중복확인, 주소찾기 */
+.btn-check {
+  background-color: #007BFF;
+  color: rgb(202, 103, 103);
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  /* transition: background-color0.2s; */
+  cursor: pointer;
+}
+
+.btn-check:hover {
+  background-color: #0056b3;
+}
+
+/* 회원가입 버튼 */
+/* .submit-btn {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}  */
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* 읽기 전용 input 회색 처리 */
+input[readonly] {
+  background-color: #eee;
+}
+
+/* 모바일 대응을 위한 반응형 */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+
+/* form-group: 하나의 label + input 조합 */
 
 label {
   margin-bottom: 6px;
@@ -79,12 +167,6 @@ button {
   transition: background 0.3s ease;
 }
 
-.btn-check {
-  background-color: #fff;
-  border: 1px solid #f2a0b5;
-  color: #f2a0b5;
-  font-weight: 500;
-}
 
 .btn-check:hover {
   background-color: #f2a0b5;
@@ -149,6 +231,7 @@ h2 {
   padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  margin-bottom: 190px;
 }
 
 /* 로그인 폼 */
@@ -616,12 +699,14 @@ h2 {
 }
 .site-footer {
   background: linear-gradient(120deg, #e8f0fe 0%, #e8f0fe 100%);
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   text-align: center;
   box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.03);
   border-top: 1px solid #ddd;
   font-family: 'Helvetica Neue', sans-serif;
-  /* padding-top: 30px; */
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-container {
@@ -708,7 +793,22 @@ h2 {
 
 /* Shop Now 버튼 */
 button {
-  margin-top: 5px;
+  margin-top: 30px;
+  padding: 12px 50px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #ffc4d6, #b5ead7);
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-class {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
   padding: 12px 50px;
   font-size: 1rem;
   background: linear-gradient(to right, #ffc4d6, #b5ead7);
@@ -721,4 +821,21 @@ button {
 
 button:hover {
   background: linear-gradient(to right, #b5ead7, #ffc4d6);
+}
+
+.btn-check {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn-check:hover {
+  background-color: #0056b3;
+}
+#phone3 {
+
 }

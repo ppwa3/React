@@ -1,4 +1,3 @@
-//화면 이동을 위한 훅 임포트
 import { Routes, Route, Outlet } from "react-router-dom";
 import InforMem from "./components/login/inforMem";
 import JoinMem from "./components/login/JoinMem";
@@ -18,7 +17,8 @@ import QnABoardWrite from "./components/board/QnAboard/QnABoardWrite";
 import QnABoardView from "./components/board/QnAboard/QnABoardView";
 import QnABoardEdit from "./components/board/QnAboard/QnABoardEdit";
 
-
+//레이아웃 컴포넌트 (상단메뉴 + 본문영역 + 푸터)
+//어떤 페이지든 항상 동일한 틀(Layout)을 유지하면서 본문만 바뀌는 구조이다.
 const Layout = ({ isLoggedIn }) => {
   return (
     <div>
@@ -30,18 +30,21 @@ const Layout = ({ isLoggedIn }) => {
     </div>
   );
 };
-
+//메인 APP 컴포넌트에서 Router를 통해 여러 페이지를 등록함
 function App(props) {
   // 라우터를 이용해서 경로에 따라 서로 다른 컴포넌트를 렌더링 해준다.
   return (
     <Routes>
+      {/* (상단메뉴 + 본문영역 + 푸터) */}
       <Route path="/" element={<Layout />}>
+        {/* 기본 루트 페이지(홈) */}
         <Route index element={<Home />} />
+        {/* 회원정보수정 */}
         <Route path="/informem" element={<InforMem />} />
+        {/* 회원가입 */}
         <Route path="/joinmem" element={<JoinMem />} />
+        {/* 로그인 */}
         <Route path="/login" element={<Log />} />
-        <Route path="/data" element={<DataBoard />} />
-        <Route path="/view" element={<DataBoardView />} />
         {/* 자유게시판 */}
         <Route path="/freeview/:id" element={<FreeBoardView />} />
         <Route path="/freelist" element={<FreeBoardList />} />
@@ -54,6 +57,8 @@ function App(props) {
         <Route path="/qnaview/:id" element={<QnABoardView />} />
         {/* 댓글 관련 컴포넌트 */}
         <Route path="/comm" element={<Comment />} />
+        <Route path="/data" element={<DataBoard />} />
+        <Route path="/view" element={<DataBoardView />} />
       
 
       </Route>
