@@ -8,7 +8,7 @@ import { getDocs, collection } from "firebase/firestore";
 function FreeBoardList(props) {
   //게시글 목록을 저장할 state를 생성
   const [databoard, setDataBoard] = useState([]);
-
+  //게시글 목록 데이터가 바뀔때마다 작업을 수행하는 
   useEffect(() => {
     const lists = databoard.map((row) => (
       <tr key={row.no}>
